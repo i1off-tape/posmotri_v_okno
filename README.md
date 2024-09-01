@@ -1,5 +1,4 @@
 # Практическая работа "Посмотри в окно"
-alt-h1
 -----------
 
 ```css
@@ -7,5 +6,4 @@ alt-h1
   display: flex;
 }
 ```
-
-Ссылка: [https://github.com/i1off-tape/posmotri_v_okno]
+https://github.com/i1off-tape/posmotri_v_okno
