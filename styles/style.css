@@ -73,7 +73,7 @@ ol {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  block-size: 54px;
+  min-block-size: 54px;
 }
 
 .search-form__fieldset {
@@ -168,6 +168,7 @@ ol {
 
 .button {
   border: 1px solid #fff;
+  padding: 6px 74px;
   color: #fff;
   font-family: inherit;
   font-weight: 700;
@@ -175,11 +176,9 @@ ol {
   text-align: center;
   background-color: transparent;
   cursor: pointer;
-  inline-size: 194px;
-  block-size: 34px;
 }
 
-button:focus {
+.button:focus {
   outline: none;
 }
 
@@ -187,11 +186,11 @@ button:focus {
   text-decoration: underline;
 }
 
-button:active {
+.button:active {
   background-color: #545050;
 }
 
-button:focus-visible {
+.button:focus-visible {
   outline: 1px solid #fff;
   outline-offset: 1px;  
 }
@@ -242,7 +241,7 @@ button:focus-visible {
   display: block;
   color: #fff;
   text-decoration: none;
-  block-size: 107px;
+  min-block-size: 107px;
 }
 
 .content__video-card {
@@ -254,7 +253,6 @@ button:focus-visible {
 }
 
 .content__video-card-title {
-  max-width: 199px;  /* Странно, что нет аналога max-block-size */
   overflow: hidden;
   font-family: Oswald, sans-serif;
   font-weight: 700;
@@ -262,19 +260,16 @@ button:focus-visible {
   line-height: 40px;
   text-transform: uppercase;
   text-overflow: ellipsis;
+  max-inline-size: 199px;  /* Спасибо за подсказку! :) */
   white-space: nowrap;
 }
 
 .content__video-card-description {
-  display: -webkit-box;
-  max-width: 199px;
-  overflow: hidden;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 21.2px;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
+  max-inline-size: 199px;
 }
 
 .content__video-card-thumbnail {
