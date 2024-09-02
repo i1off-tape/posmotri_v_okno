@@ -73,7 +73,6 @@ ol {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  min-block-size: 54px;
 }
 
 .search-form__fieldset {
@@ -222,7 +221,7 @@ ol {
 }
 
 .title > .content__accent {
-  opacity: 0.2;
+  color: #545050;
 }
 
 .content__list {
